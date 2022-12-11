@@ -1,0 +1,9 @@
+JavaScript has a method to lowercase a string.
+
+You can find this method by googling (lowercase string MDN) or by searching the MDN website: "lowerCase" and finding
+this: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase
+Using the site you can see on the "try it" page an example snippit on how to use it.
+
+for example,
+
+console.log('Aloha, World!".toLowerCase());

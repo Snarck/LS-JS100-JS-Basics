@@ -1,0 +1,24 @@
+Given the following tweet:
+
+let tweet = 'Starting to get the hang of it... #javascript #launchschool';
+
+tweet.split(' ');
+tweet.split(' ').reverse();
+tweet.split(' ').reverse().join(' ');
+
+
+Running tweet.split would return an array [starting, to, get, the, hang, of, it] (truncated)
+so the statement looks like, [starting, to, get, the...].reverse().join(' ')
+Reverse reverses the array, so now the array looks like: [it, of, hang, the, get, to, starting]
+Now the statement looks like:
+[it, of, hang, the, get, to, starting].join(' ');
+Join combines the elements in an array with a parameter that seperates them, so now, the statement reads
+"It of hang the get to starting"
+
+Relevant MDNs
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join

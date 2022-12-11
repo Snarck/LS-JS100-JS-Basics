@@ -1,0 +1,4 @@
+Is there a method to capitalize a string, for example, turning 'mountain' into 'Mountain'?
+
+From what I can tell, there's no one method to accomplish this, instead you would have to use a mix of slice, charAt
+& toUpperCase. 

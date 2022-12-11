@@ -1,0 +1,21 @@
+Look up the MDN documentation for the typeof operator. What is its return value? 
+Determine what the following statements will return:
+
+typeof 23.5;
+typeof 'Call me Ishmael.';
+typeof false;
+typeof 0;
+typeof null;
+typeof undefined;
+
+typeOf MDN = https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
+
+in "Description" we see a table that shows each type and the results of typeOf, looking at that we see that:
+
+typeof 23.5; = Number
+typeof 'Call me Ishmael.'; = String
+typeof false; = Boolean
+typeof 0; = Number
+typeof null; = Object (despite being primitive!)
+typeof undefined; = undefined 
+

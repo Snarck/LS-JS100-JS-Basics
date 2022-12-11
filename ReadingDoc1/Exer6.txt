@@ -1,0 +1,37 @@
+What are the return values of the statements on lines 3 to 5? 
+Refer to the MDN documentation about the Array object for help.
+
+let trees = ['birch', 'pine', 'sequoia', 'palm tree'];
+
+trees[trees.length - 1];
+trees.pop();
+trees[trees.length - 1];
+
+Without using the MDN (but instead raw intuition!) 
+
+trees[trees.length -1] should show 'sequoia'
+trees.pop(); should remove the last element and return it, - so 'palm tree', 
+trees[trees.length -1]; should now show 'pine' because the length of the array is now ['birch', 'pine', 'sequioia']
+
+
+Now using MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+We see "pop" works as i thought: 
+"The pop() method removes the last element from an array and returns that element. This method changes the length of the array."
+But let's look at .length on the MDN.
+We see that: 
+"
+const fruits = [];
+fruits.push("banana", "apple", "peach");
+console.log(fruits.length); // 3
+"
+
+so console.log(fruits.length); // 3
+In our intuit, we failed to account for the fact that length starts at 1 and accumulates, so to get the proper value
+we have to subtract by one, meaning:
+the first line is returns "palm tree", 
+pop returns "palm tree", 
+the third line returns "sequoia"
+
+
+

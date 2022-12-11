@@ -1,0 +1,22 @@
+Without looking into your notes, try to remember which primitive data types are defined in JavaScript.
+Then find this information on MDN.
+
+String
+Boolean
+Number
+Null
+Undefined
+Infinity
+0
+-0
+BigInt
+NaN
+-Infinity
+
+
+I probably missed a few.
+
+Results:
+
+I added 0, -0, infinities. 
+I forgot "symbol". 

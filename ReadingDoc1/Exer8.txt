@@ -1,0 +1,27 @@
+Consider the following code snippet:
+
+let tweet = "I'm learning to program! Woooot :-) #javascript #launchschool";
+
+let words = tweet.split(' ');
+let isValid = tweet.length < 140;
+
+What will the following statements return? 
+
+typeof tweet;
+typeof words;
+typeof isValid;
+
+tweet: String
+words: Object
+isValid: boolean
+
+Thought process:
+
+Tweet is a literal string, such as, "Hey dog", that's a string.  
+
+Words is using the .split() method. It would split each of the words in tweet into an array where there's a space,
+outputting something like, [I'm, learning, to, program...], arrays are objects.
+isValid is a bit tricky.  I believe it would be storing the value of "true". 
+So it's a boolean. 
+
+But if it's storing the value of tweet.length < 140;, it's a number. 

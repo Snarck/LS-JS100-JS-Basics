@@ -1,0 +1,26 @@
+
+Equality
+
+In your JavaScript console, execute the following two lines of code to check whether their return values differ and if so, how. 
+Take a look at the MDN documentation on equality comparisons to read about how == and === differ.
+
+
+'8' == 8;
+'8' === 8;
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness
+
+=== = "strict equality"
+== = "loose equality"
+
+Informative snippits:
+
+Double equals (==) will perform a type conversion when comparing two things, 
+and will handle NaN, -0, and +0 specially to conform to IEEE 754 (so NaN != NaN, and -0 == +0);
+
+Triple equals (===) will do the same comparison as double equals (including the special handling for NaN, -0, and +0)
+but without type conversion; if the types differ, false is returned.
+
+Triple equals does not do type conversion (and is faster because of it)
+
+Double equals does a type conversion, making it a dosh slower than triple equals. 
