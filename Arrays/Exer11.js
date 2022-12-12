@@ -44,3 +44,5 @@ console.log(groceryList.shift());
 // hummus
 
 groceryList; // []
+
+//I originally used .pop, but on noticing the array order requested, shifted to shift.  nailed it. 
